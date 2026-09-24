@@ -95,12 +95,20 @@ body {
 .project-card button:hover {
   background-color: #0080ff;
 }
-.FINAL{
+.FINAL {
   background-color: #1e1e2f;
   color: #1e1e2f;
   border: none;
-  text-decoration:none;
+  text-decoration: none;
 }
+
+.FINAL:visited {
+  color: #1e1e2f;
+}
+
 .FINAL:hover {
   background-color: white;
+  color: black; /* or any visible color */
+  text-decoration: underline;
 }
+
