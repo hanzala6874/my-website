@@ -1,114 +1,388 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
-  background-color: #1e1e2f;
-}
-.p1 {
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    margin-bottom: 4px;
-}
-.p1:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5)
+    background-color: #121010;
+    color: #D0CCC4;
+    font-family: Arial, sans-serif;
 }
 
-.fj {
-    display: inline-block;
-    background-color: rgb(42, 42, 168);
-    color: aliceblue;
+
+/* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    background-color: #191615;
+    border-bottom: 1px solid #5C4A2D;
+}
+
+.logo {
+    color: #E5C98B;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
     text-decoration: none;
-    border: none;
-    padding: 10px 30px;
-    margin-top: 0;
+    color: #D0CCC4;
+    transition: 0.3s;
 }
 
-.fj:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+.nav-links a:hover {
+    color: #E5C98B;
 }
 
-.fj:active {
-    opacity: 0.5;
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 12%;
 }
-.l1 {
-    margin-top: 20px;
-}
+
 .heading1 {
-    color: aliceblue;
+    color: #E5C98B;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.entry {
+    color: #D0CCC4;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 850px;
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.main-button {
+    display: inline-block;
+    background-color: #B99A58;
+    color: #121010;
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
     font-weight: bold;
-    font-style: italic;
-    margin-bottom: 2px;
+    transition: 0.3s;
 }
-.p2{
-    color: aliceblue;
-    
+
+.main-button:hover {
+    background-color: #E5C98B;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    transform: translateY(-3px);
 }
-.l2 {
-    margin-top: 0px;
-    height: 1px;
+
+
+/* COURSES SECTION */
+
+.courses {
+    padding: 80px 8%;
+    background-color: #191615;
+    text-align: center;
+}
+
+.section-heading {
+    color: #E5C98B;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    margin-bottom: 50px;
+    color: #D0CCC4;
+}
+
+
+/* COURSE CARDS */
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #211E1A;
+    border: 1px solid #6B5632;
+    border-radius: 12px;
+    padding: 35px 25px;
+    width: 300px;
+    min-height: 340px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(212, 175, 55, 0.15);
+    border-color: #E5C98B;
+}
+
+.course-card h2 {
+    color: #E5C98B;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    color: #B99A58;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.course-card p {
+    color: #D0CCC4;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.course-button {
+    margin-top: auto;
+    text-decoration: none;
+    background-color: #B99A58;
+    color: #121010;
+    padding: 11px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.course-button:hover {
+    background-color: #E5C98B;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 90px 15%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 2;
+    font-size: 17px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #191615;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact p {
+    margin: 25px auto 35px;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #0B0908;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #5C4A2D;
+}
+
+footer h2 {
+    color: #E5C98B;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #77716A;
+    margin-top: 25px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heading1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .entry {
+        font-size: 15px;
+    }
+
+    .course-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+/* ENROLMENT SECTION */
+
+.enrolment {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #191615;
+}
+
+.form-description {
+    color: #D0CCC4;
+    margin: 20px auto 40px;
+    line-height: 1.8;
+}
+
+
+/* FORM CONTAINER */
+
+.enrolment-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    background-color: #211E1A;
+    border: 1px solid #6B5632;
+    border-radius: 12px;
+
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.1);
+}
+
+
+/* LABELS */
+
+.enrolment-form label {
+    color: #E5C98B;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* INPUT FIELDS */
+
+.enrolment-form input,
+.enrolment-form select {
+
+    background-color: #121010;
+    color: #D0CCC4;
+
+    border: 1px solid #6B5632;
+    border-radius: 6px;
+
+    padding: 14px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* INPUT HOVER AND FOCUS */
+
+.enrolment-form input:focus,
+.enrolment-form select:focus {
+
+    border-color: #E5C98B;
+
+    box-shadow: 0 0 10px
+    rgba(212, 175, 55, 0.2);
+
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-button {
+
+    margin-top: 35px;
+
+    padding: 15px;
+
+    background-color: #B99A58;
+    color: #121010;
+
     border: none;
-    width: auto;
-    color: aliceblue;
-    background-color: aliceblue;
-}
-.projects {
-  text-align: center;
-  color: white;
-  margin: 40px 0;
-  font-size: 20px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.project-container {
-  display: flex;             
-  justify-content: center;    
-  gap: 20px;                 
-  flex-wrap: wrap;            
+
+.submit-button:hover {
+
+    background-color: #E5C98B;
+
+    box-shadow: 0 0 20px
+    rgba(212, 175, 55, 0.3);
+
+    transform: translateY(-3px);
+
 }
 
-.project-card {
-  background-color: #2a2a40; 
-  padding: 20px;
-  border-radius: 8px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-  transition: transform 0.2s;
-}
 
-.project-card:hover {
-  transform: translateY(-5px); 
-}
+.submit-button:active {
 
-.project-card h3 {
-  margin-bottom: 10px;
-  color: #00bfff;            
-}
+    transform: scale(0.97);
 
-.project-card button {
-  background-color: #00bfff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
 }
-
-.project-card button:hover {
-  background-color: #0080ff;
-}
-.FINAL {
-  background-color: #1e1e2f;
-  color: #1e1e2f;
-  border: none;
-  text-decoration: none;
-}
-
-.FINAL:visited {
-  color: #1e1e2f;
-}
-
-.FINAL:hover {
-  background-color: white;
-  color: black; /* or any visible color */
-  text-decoration: underline;
-}
-
