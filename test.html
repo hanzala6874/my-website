@@ -1,43 +1,235 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+
+    <title>Al-Huda Quran Academy</title>
+
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <p class="p1">
-      Hello, my name is Hanzala Ijaz <br> Web Developer and Designer
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+
+        <h2 class="logo">Al-Huda</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <h1 class="heading1">
+            Your Journey to Quran Begins Here
+        </h1>
+
+        <p class="entry">
+            Discover the Beauty of the Holy Quran.
+
+            Embark on a meaningful journey of learning,
+            understanding, and connecting with the words of Allah.
+
+            Our mission is to make Quranic education accessible
+            to everyone, providing a welcoming environment where
+            students can learn to read the Quran, improve their
+            Tajweed, memorize its verses, and strengthen their
+            relationship with Islam.
+
+            Whether you are taking your first steps or seeking
+            to deepen your knowledge, let every lesson bring
+            you closer to the guidance of the Holy Quran.
+        </p>
+
+        <a href="#courses" class="main-button">
+            Explore Our Courses
+        </a>
+
+    </section>
+
+
+    <!-- COURSES SECTION -->
+
+    <section class="courses" id="courses">
+
+        <h1 class="section-heading">Our Courses</h1>
+
+        <p class="section-description">
+            Choose the right learning journey for yourself.
+        </p>
+
+
+        <div class="course-container">
+
+
+            <!-- NOORANI QAIDA -->
+
+            <div class="course-card">
+
+                <h2>Noorani Qaida</h2>
+
+                <h3>Ages 4–6</h3>
+
+                <p>
+                    Begin your Quranic journey with Noorani Qaida.
+                    Children learn Arabic alphabets, pronunciation,
+                    basic reading skills and the foundations of
+                    Quranic recitation.
+                </p>
+
+                <a href="#contact" class="course-button">
+                    Enquire Now
+                </a>
+
+            </div>
+
+
+            <!-- QURAN -->
+
+            <div class="course-card">
+
+                <h2>Quran with Tajweed</h2>
+
+                <h3>Ages 6–10</h3>
+
+                <p>
+                    Develop beautiful and accurate Quranic recitation.
+                    Students learn Tajweed rules, improve pronunciation
+                    and build fluency through guided practice.
+                </p>
+
+                <a href="#contact" class="course-button">
+                    Enquire Now
+                </a>
+
+            </div>
+
+
+            <!-- HIFZ -->
+
+            <div class="course-card">
+
+                <h2>Hifz-ul-Quran</h2>
+
+                <h3>Ages 10+</h3>
+
+                <p>
+                    Begin the rewarding journey of memorizing
+                    the Holy Quran. Students follow a structured
+                    memorization and revision programme with
+                    regular guidance.
+                </p>
+
+                <a href="#contact" class="course-button">
+                    Enquire Now
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+
+        <h1 class="section-heading">About Al-Huda</h1>
+
+        <p>
+            At Al-Huda Quran Academy, we believe that learning
+            the Holy Quran is a lifelong journey.
+
+            We aim to provide students with a supportive
+            learning environment where they can develop their
+            Quranic knowledge, improve their recitation and
+            build a meaningful connection with Islam.
+        </p>
+
+    </section>
+
+
+    <!-- ENROLMENT SECTION -->
+
+<section class="enrolment" id="contact">
+
+    <h1 class="section-heading">Begin Your Journey</h1>
+
+    <p class="form-description">
+        Take the first step towards learning the Holy Quran.
+        Fill out the form below to register your interest.
     </p>
-    <a href="test.html" class="fj" >this is a new page try to escape</a>
-    <hr class="l1">
-    <h3 class="heading1">About Me</h3>
-    <hr class="l2">
-    <p class="p2">
-      Hello everybody,my name is Hanzala Ijaz and i am a Web Developer and Designer.I am 14 years old and i have 3 siblings
-    </p>
-    <hr class="l3">
-    <section class="projects">
-    <h3>My Work</h3>
-  <div class="project-container">
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A showcase of my latest work and skills.</p>
-      <button>View Project</button>
-    </div>
-    <div class="project-card">
-      <h3>E-Commerce Site</h3>
-      <p>Online store built with a focus on usability.</p>
-      <button>View Project</button>
-    </div>
-    <div class="project-card">
-      <h3>Creative Agency</h3>
-      <p>Landing page designed for a digital agency.</p>
-      <button>View Project</button>
-    </div>
-  </div>
+
+    <form class="enrolment-form"
+          action="mailto:hanzalaijaz9876@gmail.com"
+          method="post"
+          enctype="text/plain">
+
+        <label for="name">Full Name</label>
+
+        <input
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="Enter your full name"
+            required
+        >
+
+
+        <label for="course">Select Your Course</label>
+
+        <select id="course" name="Course" required>
+
+            <option value="" disabled selected>
+                Choose a course
+            </option>
+
+            <option value="Noorani Qaida (Ages 4-6)">
+                Noorani Qaida (Ages 4–6)
+            </option>
+
+            <option value="Quran with Tajweed (Ages 6-10)">
+                Quran with Tajweed (Ages 6–10)
+            </option>
+
+            <option value="Hifz-ul-Quran (Ages 10+)">
+                Hifz-ul-Quran (Ages 10+)
+            </option>
+
+        </select>
+
+
+        <label for="age">Age</label>
+
+        <input
+            type="number"
+            id="age"
+            name="Age"
+            placeholder="Enter your age"
+            min="1"
+            max="100"
+            required
+        >
+
+
+        <button onclick="window.location.href='hanzalaijaz9876@gmail.com'" type="submit" class="submit-button">
+            Submit Application
+        </button>
+
+    </form>
+
 </section>
-  <a href="index.html"class="FINAL">ARE YOU DUMB CANT YOU SEE MY WEBSITE, WHY DID YOU EVEN CLICKED HERE</a>
-  </body>
-</html>
