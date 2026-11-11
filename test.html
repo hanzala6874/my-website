@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width",initial-scale=1>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>
     ENROLLMENT PAGE
   </title>
@@ -10,6 +10,19 @@
 </head>
 <body>
      <!-- ENROLMENT SECTION -->
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ENROLLMENT PAGE</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
 
 <section class="enrolment" id="contact">
 
@@ -35,7 +48,6 @@
             required
         >
 
-
         <label for="course">Select Your Course</label>
 
         <select id="course" name="Course" required>
@@ -57,12 +69,16 @@
             </option>
 
         </select>
+
         <label for="email">Parent/Guardian Email</label>
 
         <input
             type="email"
-            placeholder="Enter Parent Email Address">
-
+            id="email"
+            name="Parent Email"
+            placeholder="Enter Parent Email Address"
+            required
+        >
 
         <label for="age">Age</label>
 
@@ -76,13 +92,24 @@
             required
         >
         <label
+            for="phone number">Parent/Guradian Phone Number
+        </label>
+        <input 
+            type="number"
+            placeholder="Phone Number"
+            required>
 
-
-        <button onclick="window.location.href='hanzalaijaz9876@gmail.com'" type="submit" class="submit-button">
+        <button type="submit" class="submit-button">
             Submit Application
         </button>
 
     </form>
+
+</section>
+
+</body>
+</html>
+
 
 </section>
 </body>
